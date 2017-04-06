@@ -1,15 +1,18 @@
 #randomly generate dnd 5e character sheet
 #TODO: generate stats
-#TODO: generate backstory
+#DONE: generate backstory
 #TODO: generate to pdf filled character sheet
 #TODO: generate starting weapons
 #TODO: generate characters past first level
 #TODO: Attacks and weapons
 #TODO: Name generator for each race
+#TODO: Maybe call abilityScoreGenerator from the classes to favor certain abilities higher?
+#TODO: Multiclass restrictions on skills and proficiencies
 
 import random
 import math
 import settings
+from randomAbilityScores import randomAbilityScores
 #races
 from races.dwarf import dwarf
 from races.elf import elf
@@ -21,7 +24,7 @@ from races.halfElf import halfElf
 from races.halfOrc import halfOrc
 from races.tiefling import tiefling
 #classes
-
+from classes.barbarian import barbarian
 #background
 from background.acolyte import acolyte
 from background.charlatan import charlatan
@@ -40,13 +43,18 @@ from background.urchin import urchin
 
 
 def race():
-	#race dic, if subrace then listing them else repeated
-	#dragonborn has draconic ancestry
 	racesSelection = {"dwarf":dwarf,"elf":elf, "halfling":halfling, "human":human,"dragonborn":dragonborn,"gnome":gnome,"halfelf":halfElf,"halforc":halfOrc,"tiefling":tiefling}
 	ranRace = random.choice(racesSelection.values())
 	ranRace()
 	print settings.race 
 	print settings.alignment
+
+def classes():
+	classSelection = {"barbarian":barbarian}#,"bard":bard, "cleric":cleric, "druid":druid,"fighter":fighter,"monk":monk,"paladin":paladin,"ranger":ranger,"rogue":rogue,"sorcerer":sorcerer,"warlock":warlock,"wizard":wizard}
+	ranClass = random.choice(classSelection.values())
+	ranClass()
+	print settings.classes
+
 
 def background():
 	backgroundSelection = {"acolyte":acolyte,"charlatan":charlatan, "criminal":criminal, "entertainer":entertainer,"folkhero":folkHero,"guildartisan":guildArtisan,"hermit":hermit,"noble":noble,"outlander":outlander,"sage":sage,"sailor":sailor,"soldier":soldier,"urchin":urchin}
@@ -57,6 +65,8 @@ def background():
 
 
 settings.init()
+randomAbilityScores()
 race()
 background()
+classes()
 
