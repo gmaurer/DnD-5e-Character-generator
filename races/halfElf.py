@@ -38,5 +38,4 @@ def halfElf():
 
 			twoSkills += 1
 			settings.skills[skillPro] = 1
-	print settings.skills
 
