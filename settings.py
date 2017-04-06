@@ -3,6 +3,8 @@
 def init():
 	global race
 	race = None
+	global background
+	background = None
 	#stats
 	global strength
 	global dexterity
@@ -49,8 +51,16 @@ def init():
 	#all skills 
 	global skills
 	skills = {"Athletics":0, "Acrobatics":0, "Sleight of Hand":0, "Stealth":0, "Arcana":0, "History":0, "Investigation":0, "Nature":0, "Religion":0, "Animal Handling":0, "Insight":0, "Medicine":0, "Perception":0, "Survival":0, "Deception":0, "Intimidation":0, "Performance":0, "Persuasion":0}
+	#feats
 	global feats
 	feats = {}
+	#items make into dic so you can have quantity?
+	global equipment
+	equipment = {}
+	#wealth in gp, sp, cp
+	global wealth
+	wealth = {"Gold":0,"Silver":0,"Copper":0}
+
 
 
 
