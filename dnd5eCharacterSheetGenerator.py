@@ -24,6 +24,13 @@ from races.tiefling import tiefling
 
 #background
 from background.acolyte import acolyte
+from background.charlatan import charlatan
+from background.criminal import criminal
+from background.entertainer import entertainer
+from background.folkHero import folkHero
+from background.guildArtisan import guildArtisan
+from background.hermit import hermit
+
 
 
 def race():
@@ -34,10 +41,9 @@ def race():
 	ranRace()
 	print settings.race 
 	print settings.alignment
-	print settings.featuresAndTraits
 
 def background():
-	backgroundSelection = {"acolyte":acolyte}#,"charlatan":charlatan, "criminal":criminal, "entertainer":entertainer,"folkhero":folkHero,"guildartisan":guildArtisan,"hermit":hermit,"noble":noble,"outlander":outlander,"sage":sage,"sailor":sailor,"soldier":soldier,"urchin":urchin}
+	backgroundSelection = {"acolyte":acolyte,"charlatan":charlatan, "criminal":criminal, "entertainer":entertainer,"folkhero":folkHero}#,"guildartisan":guildArtisan,"hermit":hermit,"noble":noble,"outlander":outlander,"sage":sage,"sailor":sailor,"soldier":soldier,"urchin":urchin}
 	ranBackground = random.choice(backgroundSelection.values())
 	ranBackground()
 	print settings.background
