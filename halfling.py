@@ -9,6 +9,7 @@ def halfling():
 	settings.age = random.randint(5,150)
 	settings.size = (int(random.uniform(2.5,3.5)*100))/100.0
 	settings.speed = 25
+	settings.weight = random.randint(30,60)
 
 	settings.featuresAndTraits["Lucky"] = "Reroll nautural 1's on attack, ability checks, or saving throws."
 	settings.featuresAndTraits["Brave"] = "Advantage on saving throws against being frightened."

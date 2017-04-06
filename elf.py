@@ -9,6 +9,7 @@ def elf():
 	settings.age = random.randint(5,750)
 	settings.size = (int(random.uniform(5.0,6.5)*100))/100.0
 	settings.speed = 30
+	settings.weight = random.randint(90,200)
 
 	settings.featuresAndTraits["Dark Vision"] = "Range: 60 feet. See in dim light as bright light and dark light at dim light"
 	settings.featuresAndTraits["Keen Sense"] = "Proficiency in Perception"

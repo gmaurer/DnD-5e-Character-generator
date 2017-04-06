@@ -9,6 +9,7 @@ def dwarf():
 	settings.age = random.randint(5,350) 
 	settings.size = (int(random.uniform(4.0,5.0)*100))/100.0
 	settings.speed = 25
+	settings.weight = random.randint(120,200)
 
 	settings.featuresAndTraits["Dark Vision"] = "Range: 60 feet. See in dim light as bright light and dark light at dim light"
 	settings.featuresAndTraits["Dwarven Resilience"] = "Advantage on saving throws against poison and resistance to poison"
