@@ -30,6 +30,12 @@ from background.entertainer import entertainer
 from background.folkHero import folkHero
 from background.guildArtisan import guildArtisan
 from background.hermit import hermit
+from background.noble import noble
+from background.outlander import outlander
+from background.sage import sage
+from background.sailor import sailor
+from background.soldier import soldier
+from background.urchin import urchin
 
 
 
@@ -43,7 +49,7 @@ def race():
 	print settings.alignment
 
 def background():
-	backgroundSelection = {"acolyte":acolyte,"charlatan":charlatan, "criminal":criminal, "entertainer":entertainer,"folkhero":folkHero}#,"guildartisan":guildArtisan,"hermit":hermit,"noble":noble,"outlander":outlander,"sage":sage,"sailor":sailor,"soldier":soldier,"urchin":urchin}
+	backgroundSelection = {"acolyte":acolyte,"charlatan":charlatan, "criminal":criminal, "entertainer":entertainer,"folkhero":folkHero,"guildartisan":guildArtisan,"hermit":hermit,"noble":noble,"outlander":outlander,"sage":sage,"sailor":sailor,"soldier":soldier,"urchin":urchin}
 	ranBackground = random.choice(backgroundSelection.values())
 	ranBackground()
 	print settings.background
