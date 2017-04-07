@@ -1,7 +1,7 @@
 #randomly generate dnd 5e character sheet
 #TODO: generate stats
 #DONE: generate backstory
-#TODO: generate to pdf filled character sheet
+#TODO: generate to pdf filled character sheet (maybe latex if pdf wont work??)
 #TODO: generate starting weapons
 #TODO: generate characters past first level
 #TODO: Attacks and weapons
