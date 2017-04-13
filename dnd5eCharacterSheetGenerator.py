@@ -8,6 +8,8 @@
 #TODO: Name generator for each race
 #TODO: Maybe call abilityScoreGenerator from the classes to favor certain abilities higher?
 #TODO: Multiclass restrictions on skills and proficiencies
+#TODO: Global for class archetypes and randomly pick one
+#TODO: Feat instead of ability score improvment option?
 
 import random
 import math
@@ -49,6 +51,7 @@ def race():
 	print settings.race 
 	print settings.alignment
 
+
 def classes():
 	classSelection = {"barbarian":barbarian}#,"bard":bard, "cleric":cleric, "druid":druid,"fighter":fighter,"monk":monk,"paladin":paladin,"ranger":ranger,"rogue":rogue,"sorcerer":sorcerer,"warlock":warlock,"wizard":wizard}
 	ranClass = random.choice(classSelection.values())
@@ -62,6 +65,8 @@ def background():
 	ranBackground()
 	print settings.background
 	print settings.wealth
+
+
 
 
 settings.init()

@@ -10,7 +10,6 @@ def randomAbilityScores():
 	for x in xrange(0,6):
 		randomDice = []
 		abiltiyScoreTotal = 0
-		#ability = abilities[0]
 		for y in xrange(0,4):
 			randomDice.append(random.randint(1,6))
 			
