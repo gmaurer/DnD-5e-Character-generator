@@ -94,20 +94,28 @@ def init():
 	#wealth in gp, sp, cp
 	global wealth
 	wealth = {"Gold":0,"Silver":0,"Copper":0}
+	#Hit dice for health regen
 	global hitDice
 	hitDice = 0
+	#types of saving throws with profi
 	global savingThrow
 	savingThrow = {"Dexterity":0, "Strength":0, "Constitution":0, "Intelligence":0, "Wisdom":0, "Charisma":0}
+	#bonus per level
 	global proficiencyBonus
 	proficiencyBonus = 0
+	#barbarian rages
 	global ragesToLevel
 	ragesToLevel = {1:[2,2], 2:[2,2], 3:[3,2], 4:[3,2], 5:[3,2], 6:[4,2], 7:[4,2], 8:[4,2], 9:[4,3], 10:[4,3], 11:[4,3], 12:[5,3], 13:[5,3], 14:[5,3], 15:[5,3], 16:[5,4], 17:[6,4], 18:[6,4], 19:[6,4],20:[99,4]}
+	#rages allowed
 	global rages
 	rages = None
+	#bonus rages
 	global rageBonus
 	rageBonus = None
+	#
 	global levelFeatures 
 	levelFeatures = {}
+	#archetype, may need to account for multiple archetypes if multiclassing
 	global classArchetype
 	classArchetype = None
 

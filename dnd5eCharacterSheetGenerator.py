@@ -10,6 +10,7 @@
 #TODO: Multiclass restrictions on skills and proficiencies
 #TODO: Global for class archetypes and randomly pick one
 #TODO: Feat instead of ability score improvment option?
+#TODO: Multiclass archetype compatibility?
 
 import random
 import math
@@ -57,6 +58,7 @@ def classes():
 	ranClass = random.choice(classSelection.values())
 	ranClass()
 	print settings.classes
+
 
 
 def background():
